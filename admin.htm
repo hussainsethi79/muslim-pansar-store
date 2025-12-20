@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Admin Panel</h1></header>
+
+<div class="container">
+
+<div class="card" id="loginBox">
+<h2>Admin Login</h2>
+<input id="user" placeholder="Username">
+<input id="pass" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+</div>
+
+<div class="card" id="panel" style="display:none">
+<h2>Add / Manage Products</h2>
+
+<input id="name" placeholder="Product Name">
+<input id="qty" placeholder="Quantity">
+<select id="sell">
+<option value="true">Selling</option>
+<option value="false">Not Selling</option>
+</select>
+<button onclick="addProduct()">Add Product</button>
+
+<div id="list"></div>
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
